@@ -1,7 +1,8 @@
 require "test_helper"
 
 class CalculatesControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should post to calculate" do
+    post calculate_url
+    assert_response :success
+  end
 end
