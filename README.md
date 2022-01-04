@@ -4,6 +4,18 @@
 
 <strong>Calculate api</strong> is a Ruby on Rails API only app. Its core functionality is taking in two numbers and doing a mathematical operation on it i.e add, subtract, multiply, and divide. The application does not have a front-end hooked to it and can only be interacted with by using api testing applications like POSTMAN or Curl etc.
 
+**QUICK WAY TO INTERACT WITH API**
+- Achieved by interacting with heroku deployed api.
+- Request parameters should include a, b and operation. a and b hold the two integer values and operation holds the operation that is sum, times, sub, and divide.
+
+N.B: Heroku takes about 30 seconds to start so if it fails on first attempt run it again after a few seconds.
+
+1. Using curl in a terminal
+- curl -d 'a=5&b=10&operation=sum' https://tzvaita-calculate-app.herokuapp.com/calculate
+
+2. Using Postman
+- Make a post request with following statement: https://tzvaita-calculate-app.herokuapp.com/calculate?a=5&b=10&operation=sum
+
 **POSTMAN**
 
 <p align="center">
@@ -48,9 +60,6 @@
 - rails s
 - Once the server is up and running the api is now live on localhost:3000
 
--Other options to interact with the api end-point is heroku deployment which can be accessed on https://tzvaita-calculate-app.herokuapp.com/calculate
-
-N.B: Heroku takes about 30 seconds to start so if it fails on first attempt run it agian after a few seconds.
 
 ## Author
 
